@@ -1,3 +1,136 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/////////////////////////
+///// GENERAL RULES /////
+/////////////////////////
+
+//// Typo Styles /////
+
+h1,
+h2 {
+  text-align: center;
+  font-weight: 100;
+}
+
+h1, a {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 4px;
+}
+
+h2 {
+  font-size: 1.6em;
+  letter-spacing: 10px;
+  font-style: italic;
+  font-weight: 300;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+//// Subpages General Layout /////
+.container {
+  margin: 150px auto 500px;
+}
+
+.container h1 {
+  margin-bottom: 40px;
+}
+
+.container p {
+  width: 48%;
+  margin: auto;
+}
+
+//////////////////////////
+/////// NAVIGATION ///////
+//////////////////////////
+
+//// Logo /////
+.logo-icon {
+  width: 30px;
+  height: auto;
+}
+
+//// NAV /////
+.bg-light {
+  background-color: rgba(255,255,255,100) !important;
+}
+
+.ml-auto {
+  margin: auto;
+}
+
+.navbar-nav{
+  font-size: .7em;
+  text-transform: lowercase;
+  padding: 0 14px;
+}
+
+.navbar-nav a {
+  color: black;
+  letter-spacing: 4px;
+  padding: 0 20px;
+}
+
+.nav-item {
+  padding: 9px;
+}
+
+.navbar-nav a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1em;
+}
+
+//////////////////////////
+////////// HOME //////////
+//////////////////////////
+//// LOGO /////
+.logo-img {
+  width: 20%;
+  margin: 150px auto 20px;
+  display: block;
+}
+
+//// MAIN IMAGE /////
+.coming-soon-img {
+  width: 90%;
+  margin: 50px auto;
+  display: block;
+}
+
+///////////////////////////
+////////// ABOUT //////////
+///////////////////////////
+
+
+/////////////////////////////
+////////// CONTACT //////////
+/////////////////////////////
+
+
+////////////////////////////
+////////// FOOTER //////////
+////////////////////////////
+.footer {
+  text-align: center;
+}
+
+.copyright {
+  font-size: .6em;
+  letter-spacing: 1px;
+}
