@@ -1,7 +1,11 @@
 <div class="col-12 col-md-4 md-row">
-  <%= image_tag(product.image_url, class: "img-fluid") %>
-  <a href="#"><%= product.name %></a>
-  <%= product.description %>
-  <%= product.colour %>
-  <%= product.price %>
+
+  <!--<#%= image_tag(product.image_url, class: "img-fluid") %>-->
+
+  <%= link_to image_tag(product.image_url, class: "img-fluid product-img"), product %>
+
+  <a href="#"><%= link_to(product.name, product) %></a>
+  <!--<#%= product.description %>
+  <#%= product.colour %>
+  <#%= product.price %>-->
 </div><!-- /col -->

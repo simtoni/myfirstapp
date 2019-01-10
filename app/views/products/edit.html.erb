@@ -1,6 +1,12 @@
-<h1>Editing Product</h1>
+<section class="container">
 
-<%= render 'form', product: @product %>
+  <h1>Editing Product</h1>
 
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+  <%= render 'form', product: @product %>
+
+  <section class="back-link">
+    <%= link_to 'Show', @product %> |
+    <%= link_to 'Back', products_path %>
+  </section>
+
+</section>
