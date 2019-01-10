@@ -7,16 +7,16 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <%= link_to "Home", root_path %>
-          </li>
+      </li>
       <li class="nav-item">
         <%= link_to 'Shop', products_url %>
       </li>
       <li class="nav-item">
         <%= link_to 'Order', orders_url %>
       </li>
-      <a class="navbar-brand" href="#">
-        <%= image_tag("bb_logo_pic.png", class: "logo-icon")%>
-      </a>
+      <li class="nav-item">
+        <%= link_to image_tag("bb_logo_pic.png", class: "logo-icon"), simple_pages_landing_page_path %>
+      </li>
       <li class="nav-item">
         <%= link_to "About", simple_pages_about_path %>
       </li>
