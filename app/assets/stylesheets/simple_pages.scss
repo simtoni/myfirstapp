@@ -55,7 +55,6 @@ p {
 //////////////////////////
 /////// NAVIGATION ///////
 //////////////////////////
-
 //// LOGO /////
 .logo-icon {
   width: 30px;
@@ -75,6 +74,10 @@ p {
   font-size: .7em;
   text-transform: lowercase;
   padding: 0 14px;
+}
+
+.login-out {
+  margin: 0 !important;
 }
 
 .navbar-nav a {
@@ -170,6 +173,55 @@ p {
     background-color: #FF0040;
 }
 
+////////////////////////////
+////////// DEVISE //////////
+////////////////////////////
+
+.sign-in-form {
+  width: 20%;
+  margin: 60px auto 0; 
+}
+
+.sign-up-btn input {
+  width: 70px;
+  border-radius: 10px;
+  color: #F00040;
+  border-color: #f00040;
+  background-color: white;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  font-size: .8em;
+  cursor: pointer;
+  margin: 20px 0 2px;
+}
+
+.login a {
+  color: black;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  font-weight: 500;
+  font-size: .8em;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.login-section {
+  width: 20%;
+}
+
+.login-btn input {
+  width: 70px;
+  border-radius: 10px;
+  color: #F00040;
+  border-color: #f00040;
+  background-color: white;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  font-size: .8em;
+  cursor: pointer;
+  margin: 20px 0 2px;
+}
+
 /////////////////////////////
 ////////// CONTACT //////////
 /////////////////////////////
@@ -202,7 +254,6 @@ p {
 ///////////////////////////////
 ////////// THANK YOU //////////
 ///////////////////////////////
-
 .panel p {
   text-align: center;
   font-size: 2em;

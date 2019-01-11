@@ -4,7 +4,7 @@
   </button>
 
   <section class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav ml-auto nav-pos">
       <li class="nav-item">
         <%= link_to "Home", root_path %>
       </li>
@@ -31,7 +31,17 @@
           <% end %>
         <% end %>
       </li>
-
+    </ul>
+    <ul class="navbar-nav ml-auto login-out">
+      <% if user_signed_in? %>
+      <li class="nav-item">
+        <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
+      </li>
+      <% else %>
+      <li class="nav-item">
+        <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+      </li>
+      <% end %>
     </ul>
   </section>
 </section>
