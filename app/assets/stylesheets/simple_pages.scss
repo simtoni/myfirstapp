@@ -97,6 +97,23 @@ p {
   font-size: 1em;
 }
 
+.search-layout {
+  display: flex;
+}
+
+.search-area {
+  border-radius: 10px;
+  border: inset .5px;
+  width: 65%;
+}
+
+.search-btn {
+  margin-left: 3px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
 //////////////////////////
 ////////// HOME //////////
 //////////////////////////
