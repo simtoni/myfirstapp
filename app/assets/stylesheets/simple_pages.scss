@@ -47,10 +47,17 @@ p {
   margin-bottom: 40px;
 }
 
-// .container p {
-//   width: 48%;
-//   margin: auto;
-// }
+//// ALERTS /////
+#alert,
+#notice {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 3px;
+  color: white;
+  margin-top: 60px;
+  text-transform: lowercase;
+  text-align: center !important;
+  background-color: #F00040;
+}
 
 //////////////////////////
 /////// NAVIGATION ///////
@@ -179,14 +186,14 @@ p {
 
 .sign-in-form {
   width: 20%;
-  margin: 60px auto 0; 
+  margin: 60px auto 0;
 }
 
 .sign-up-btn input {
   width: 70px;
   border-radius: 10px;
   color: #F00040;
-  border-color: #f00040;
+  border-color: #F00040;
   background-color: white;
   letter-spacing: 1px;
   text-transform: lowercase;
