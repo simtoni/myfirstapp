@@ -1,0 +1,19 @@
+<section class="comment-section">
+  <% if signed_in? %>
+    <h2>Add a review:</h2>
+    <%= form_for([@product, @product.comments.build]) do |f| %>
+      <p>
+        <!-- <#%= f.label :body, "Comments" %><br> -->
+        <%= f.text_area :body %>
+      </p>
+
+      <p>
+        <div class="rating"></div>
+      </p>
+
+      <p>
+        <%= f.submit "Submit", class: "form_label comment-btn" %>
+      </p>
+    <% end %>
+  <% end %>
+</section>

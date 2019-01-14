@@ -32,6 +32,16 @@ h2 {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
+h3 {
+  font-size: 1em;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  text-transform: lowercase;
+  font-style: italic;
+
+}
+
 p {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
@@ -45,6 +55,18 @@ p {
 
 .container h1 {
   margin-bottom: 40px;
+}
+
+//// BUTTONS /////
+.form_label {
+  border-radius: 20px;
+  color: #F00040;
+  border-color: #f00040;
+  background-color: white;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  font-size: .8em;
+  cursor: pointer;
 }
 
 //// ALERTS /////
@@ -245,17 +267,9 @@ p {
   margin: 0 auto;
 }
 
-.form_label {
-  width: 55px;
+.contact-btn {
   float: right;
-  border-radius: 10px;
-  color: #F00040;
-  border-color: #f00040;
-  background-color: white;
-  letter-spacing: 1px;
-  text-transform: lowercase;
-  font-size: .8em;
-  cursor: pointer;
+  width: 55px;
 }
 
 ///////////////////////////////

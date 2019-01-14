@@ -18,4 +18,8 @@ Rails.application.routes.draw do
   # orders
   resources :orders, only: [:index, :show, :create, :destroy]
 
+  resources :products do
+    resources :comments
+  end  
+
 end

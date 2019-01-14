@@ -19,14 +19,13 @@
         <%= @product.description %>
       </p>
 
-      <!-- <p>
-        <strong>Image url:</strong>
-        <#%= @product.image_url %>
-      </p> -->
-
       <p>
         <strong>Colour:</strong>
         <%= @product.colour %>
+      </p>
+
+      <p>
+        Average Rating:<div class="rated" data-score="<%= @product.average_rating %>"></div>
       </p>
 
       <p>
@@ -34,9 +33,27 @@
         <%= @product.price %>
       </p>
 
-      <%= link_to 'Edit', edit_product_path(@product) %> |
-      <%= link_to 'Back', products_path %>
+      <section class ="high-low-rating">
+        <h3>Highest Comment</h3>
+        <%= @product.highest_rating_comment.body %>
+      </section>
+      <section class ="high-low-rating">
+        <h3>Lowest Comment</h3>
+        <%= @product.lowest_rating_comment.body %>
+      </section>
+
+      <section class ="back-link show-links">
+        <%= link_to 'Edit', edit_product_path(@product) %> |
+        <%= link_to 'Back', products_path %>
+      </section>
     </section>
+
+    <section class ="star-comments col-12 col-md-12">
+      <%= render 'new_comment' %>
+      <%= render 'comments' %>
+    </section>
+
+
 
   </section><!--end row-->
 </section>
