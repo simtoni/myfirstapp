@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!--<p id="notice"><#%= notice %></p>-->
 
 <section class="container container-fluid">
   <section class="row">
@@ -36,13 +36,17 @@
         </section>
 
         <section class ="high-rating">
-          <h3>Highest Rating</h3>
-          <div class="rated" data-score="<%= @product.highest_rating_comment %>"></div>
+          <% if @product.comments.length > 0 %>
+            <h3>Highest Rating</h3>
+            <div class="rated" data-score="<%= @product.highest_rating_comment.rating %>"></div>
+          <% end %>
         </section>
 
         <section class ="low-rating">
-          <h3>Lowest Rating</h3>
-          <div class="rated" data-score="<%= @product.lowest_rating_comment %>"></div>
+          <% if @product.comments.length > 0 %>
+            <h3>Lowest Rating</h3>
+            <div class="rated" data-score="<%= @product.lowest_rating_comment.rating %>"></div>
+          <% end %>
         </section>
       </section>
 
