@@ -51,6 +51,8 @@
     <section class ="star-comments col-12 col-md-12">
       <%= render 'new_comment' %>
       <%= render 'comments' %>
+      <!--- render page links in the view: -->
+      <%= will_paginate @comments, class: "comments_pagination" %>
     </section>
 
 

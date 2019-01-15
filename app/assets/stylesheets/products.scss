@@ -58,6 +58,44 @@
   margin-bottom: 20px;
 }
 
+// pagination //
+.comments_pagination {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: .3em;
+  cursor: default;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+
+.comments_pagination a,
+.comments_pagination span {
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  font-weight: 100;
+  padding: 0 10px;
+  font-size: .8em;
+  }
+
+.comments_pagination .current {
+  font-style: normal;
+  font-weight: 900;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: .8em;
+}
+
+.comments_pagination a {
+  text-decoration: none;
+  color: black;
+}
+
+.comments_pagination a:hover,
+.comments_pagination a:focus {
+  color: #FF0040;
+}
+
 ///////////////////////////
 ////////// _FORM //////////
 ///////////////////////////
