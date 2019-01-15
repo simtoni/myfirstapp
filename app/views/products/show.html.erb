@@ -25,22 +25,27 @@
       </p>
 
       <p>
-        Average Rating:<div class="rated" data-score="<%= @product.average_rating %>"></div>
-      </p>
-
-      <p>
         <strong>Price:</strong>
         <%= @product.price %>
       </p>
 
-      <section class ="high-low-rating">
-        <h3>Highest Comment</h3>
-        <%= @product.highest_rating_comment.body %>
+      <section class ="product-rating">
+        <section class ="average-rating">
+          <h3>Average Rating</h3>
+          <div class="rated" data-score="<%= @product.average_rating %>"></div>
+        </section>
+
+        <section class ="high-rating">
+          <h3>Highest Rating</h3>
+          <div class="rated" data-score="<%= @product.highest_rating_comment %>"></div>
+        </section>
+
+        <section class ="low-rating">
+          <h3>Lowest Rating</h3>
+          <div class="rated" data-score="<%= @product.lowest_rating_comment %>"></div>
+        </section>
       </section>
-      <section class ="high-low-rating">
-        <h3>Lowest Comment</h3>
-        <%= @product.lowest_rating_comment.body %>
-      </section>
+
 
       <section class ="back-link show-links">
         <%= link_to 'Edit', edit_product_path(@product) %> |

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'simple_pages/index'
   get 'simple_pages/landing_page'
 
-  post 'simple_pages/thank_you'
+  post 'simple_pages/thank_you', to: 'simple_page#thank_you'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
@@ -20,6 +20,6 @@ Rails.application.routes.draw do
 
   resources :products do
     resources :comments
-  end  
+  end
 
 end
