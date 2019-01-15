@@ -48,6 +48,15 @@
   width: 65px;
 }
 
+.comment-info em, {
+  padding: 0 10px;
+}
+
+.comment-delete {
+  color: #FF0040;
+  height: 20%;
+}
+
 // rating //
 .product-rating h3 {
   margin-top: 40px;
