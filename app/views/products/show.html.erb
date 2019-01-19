@@ -8,7 +8,7 @@
         <%= @product.name %>
       </p>
       <p>
-        <%= image_tag(@product.image_url) %>
+        <%= image_tag(@product.image_url, class: "img-zoom", data_zoom_image: "@product.product_image.url") %>
       </p>
     </section>
 

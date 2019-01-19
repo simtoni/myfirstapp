@@ -15,4 +15,11 @@ $(document).on('turbolinks:load', function(){
       return $(this).attr('data-score');
     }
   });
+
+  $('.img-zoom').elevateZoom({
+    borderSize: 1,
+    borderColour: "grey",
+    lensFadeIn: 300,
+    lensFadeOut: 300,
+  });
 });
