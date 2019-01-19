@@ -4,7 +4,9 @@
   <h1>Collection</h1>
 
   <div class="row products-section">
+    <% cache(cache_key_for_products) do %>
       <%= render @products %>
+    <% end %>
   </div>
 
   <section class="back-link">
