@@ -63,7 +63,7 @@ p {
   background-color: white;
   letter-spacing: 1px;
   text-transform: lowercase;
-  font-size: .8em;
+  font-size: .8em !important;
   cursor: pointer;
 }
 
@@ -78,6 +78,31 @@ p {
   text-align: center !important;
   background-color: #F00040;
   line-height: 6px;
+}
+
+//// real time update /////
+.alert-info {
+  background-color: #f1f1f1;
+  color: black;
+  border: none;
+  border-radius: 77px;
+  letter-spacing: 4px;
+  text-align: center;
+  font-style: italic;
+  height: 30px;
+  padding: 5px;
+  font-weight: 100;
+  text-transform: lowercase;
+  font-size: .8em;
+  margin-top: 30px;
+}
+
+.new_comment {
+  color: #f00040;
+  letter-spacing: 6px;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin-bottom: 30px;
 }
 
 //////////////////////////
